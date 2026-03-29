@@ -18,11 +18,12 @@ const LiquidBackground = () => {
 
         const app = LiquidBackgroundFn(canvas)
 
-        app.loadImage('ChatGPT Image Mar 29, 2026, 12_14_40 PM.png')
+        app.loadImage('/bg_image.png')
         app.liquidPlane.material.metalness = 0.75
         app.liquidPlane.material.roughness = 0.25
         app.liquidPlane.uniforms.displacementScale.value = 5
         app.setRain(false)
+        app.resize()
 
         window.addEventListener('resize', () => {
           app.resize()
