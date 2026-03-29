@@ -24,6 +24,8 @@ body {
   transform: translate(-50%, -50%) scale(2);
   z-index: -1;
   pointer-events: none;
+  filter: brightness(0.15) hue-rotate(250deg) saturate(2);
+  opacity: 0.8;
 }
 
 .glass {
